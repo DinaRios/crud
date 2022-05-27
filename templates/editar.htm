@@ -1,0 +1,15 @@
+{% extends 'layout.htm'%}
+    
+    {% block body %}
+
+<form action="/actualizar/{{producto.1}}" method="POST">
+
+    <input type="text" name="codigo" placeholder="codigo" value = "{{ producto.1 }}">
+    <input type="text" name="nombre" placeholder="nombre" value = "{{ producto.2 }}">>
+    <input type="text" name="precio " placeholder="precio" value = "{{ producto.3 }}">>
+    <input type="text" name="cantidad" placeholder="cantidad"value = "{{ producto.4 }}">>
+    <button tipe="submit">
+        save
+    </button>
+</form>
+{% endblock %}
